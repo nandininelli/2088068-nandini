@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicFilesLib", "MagicFilesLib\MagicFilesLib.csproj", "{3E7061C5-977D-4EE0-B830-3BD9238C76F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectoryExplorer.Tests", "DirectoryExplorer.Tests\DirectoryExplorer.Tests.csproj", "{100E6C29-0CCD-466D-B43C-897298946C4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E7061C5-977D-4EE0-B830-3BD9238C76F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7061C5-977D-4EE0-B830-3BD9238C76F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7061C5-977D-4EE0-B830-3BD9238C76F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7061C5-977D-4EE0-B830-3BD9238C76F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{100E6C29-0CCD-466D-B43C-897298946C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{100E6C29-0CCD-466D-B43C-897298946C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{100E6C29-0CCD-466D-B43C-897298946C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{100E6C29-0CCD-466D-B43C-897298946C4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7933E1F2-B3D5-469F-9DEF-3A3C3CC8D661}
+	EndGlobalSection
+EndGlobal
