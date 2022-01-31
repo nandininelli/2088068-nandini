@@ -1,0 +1,35 @@
+﻿
+@model DoctorsManagement.Models.DoctorsInfo
+@{
+    ViewData["Title"] = "Edit";
+}<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken() @Html.HiddenFor(Model => Model.Id) @Html.LabelFor(Model => Model.Name)
+    <br />
+    @Html.EditorFor(Model => Model.Name)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.Name)
+    <br />
+    @Html.LabelFor(Model => Model.Specialization)
+    <br />
+    @Html.EditorFor(Model => Model.Specialization)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.Specialization)
+    <br />
+
+    @Html.LabelFor(Model => Model.HospitalName)
+    <br />
+    @Html.EditorFor(Model => Model.HospitalName)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.HospitalName)
+    <br />
+    <input type="submit" value="Update" />
+}
+@section StylesAndScripts{
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+}
+
+

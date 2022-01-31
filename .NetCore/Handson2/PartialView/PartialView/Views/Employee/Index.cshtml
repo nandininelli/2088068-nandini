@@ -1,0 +1,25 @@
+﻿@model IEnumerable<PartialView.Models.Employee>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Employee Details</h1>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsPermanant)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        @Html.Partial("EmployeePartialView", item);
+    }
+</table>

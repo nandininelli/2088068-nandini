@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>ItOrganisations Details</h1>
+<body>
+    @foreach (var item in Model)
+    {
+        if (item == "Amazon")
+        {
+            <p><b>@item</b></p>
+        }
+        else
+        {
+            <p>@item</p>
+        }
+    }
+
+</body>
+

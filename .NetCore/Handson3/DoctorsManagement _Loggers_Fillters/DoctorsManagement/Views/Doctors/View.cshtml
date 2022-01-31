@@ -1,0 +1,63 @@
+﻿@model DoctorsManagement.Models.DoctorsInfo
+@{
+    ViewData["Title"] = "View";
+}
+
+h2>Create</h2>
+<form asp-controller="Student" asp-action="Create" method="post">
+
+
+
+    @Html.AntiForgeryToken()
+
+
+
+    <div asp-validation-summary="All"></div>
+
+
+
+    <label asp-for="Name"></label>
+    <br />
+    <input asp-for="Name" />
+    <br />
+    <span asp-validation-for="Name"></span>
+    <br />
+
+
+
+
+    <label asp-for="Specialization"></label>
+    <br />
+    <input asp-for="Specialization" />
+    <br />
+    <span asp-validation-for="Specialization"></span>
+    <br />
+
+
+   <label asp-for="HospitalName"></label>
+    <br />
+    <input asp-for="HospitalName"/>
+    <br />
+    <span asp-validation-for="HospitalName"></span>
+    <br />
+
+
+
+    <input type="submit" value="Create" />
+
+
+
+</form>
+
+
+
+
+@section StylesAndScripts{
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+
+
+}
+

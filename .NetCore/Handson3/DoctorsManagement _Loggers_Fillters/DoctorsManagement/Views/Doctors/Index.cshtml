@@ -1,0 +1,21 @@
+﻿@model List<DoctorsManagement.Models.DoctorsInfo>
+    @{
+        ViewData["Title"] = "Index";
+    }
+
+    <h1>Doctors List</h1>
+    <table>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Specilization</th>
+        <th>HospitalName</th>
+  
+    @foreach (var doctor in Model)
+    {
+        <tr>@doctor.Id</tr>
+        <tr>@doctor.Name</tr>
+        <tr>@doctor.Specialization</tr>
+        <tr>@doctor.HospitalName</tr>
+    }
+
+</table>

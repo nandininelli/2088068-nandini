@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+
+
+    <link href="~/css/site.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Students Details</h1>
+    <div class="menu">
+        @Html.ActionLink("List", "Index", "Doctors")
+        @Html.ActionLink("Add New", "Create", "Doctors")
+
+
+
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+
+
+
+    @RenderSection("StylesAndScripts", false)
+</body>
+</html>
