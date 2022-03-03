@@ -1,0 +1,58 @@
+﻿@model MovieList
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h4>MovieList</h4>
+<hr />
+@using (Html.BeginForm())
+{
+
+
+    @Html.LabelFor(Model => Model.Title)
+    <br />
+    @Html.EditorFor(Model => Model.Title)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.Title)
+    <br />
+    @Html.LabelFor(Model => Model.BoxOffice)
+    <br />
+    @Html.EditorFor(Model => Model.BoxOffice)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.BoxOffice)
+    <br />
+    @Html.LabelFor(Model => Model.ActiveStatus)
+    <br />
+    @Html.CheckBoxFor(Model => Model.ActiveStatus)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.ActiveStatus)
+    <br />
+    @Html.LabelFor(Model => Model.DateOfLaunch)
+    <br />
+    @Html.EditorFor(Model => Model.DateOfLaunch)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.DateOfLaunch)
+    <br />
+    @Html.LabelFor(Model => Model.SelectGenere)
+    <br />
+    @Html.EditorFor(Model => Model.SelectGenere)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.SelectGenere)
+    <br />
+    @Html.DropDownListFor(m => m.MovieGenere, new SelectList(Enum.GetValues(typeof(Genere))), "Select Genere")
+    <br />
+    @Html.LabelFor(Model => Model.hasTeaser)
+    <br />
+    @Html.CheckBoxFor(model => model.hasTeaser)
+    <br />
+    @Html.ValidationMessageFor(Model => Model.hasTeaser)
+    <input type="submit" value="Create" />
+}
+
+
+@section StylesAndScripts {
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+}

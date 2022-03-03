@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppHandson", "WebAppHandson.csproj", "{21B5A280-5C01-4AF6-93D7-E738A08BA0EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21B5A280-5C01-4AF6-93D7-E738A08BA0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B5A280-5C01-4AF6-93D7-E738A08BA0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B5A280-5C01-4AF6-93D7-E738A08BA0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B5A280-5C01-4AF6-93D7-E738A08BA0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2314DE95-F401-48A6-A507-675FFEAD97EA}
+	EndGlobalSection
+EndGlobal
